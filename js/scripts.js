@@ -1,0 +1,12 @@
+$(function(){
+	$('#mobile').click(function(){
+		$('#bars').toggleClass('fa-times');
+		if($(this).find('ul').is(':visible')){
+			$(this).find('ul').hide();
+			$('body').css('background','#fff')
+		}else{
+			$(this).find('ul').show();
+			$('body').css('background','#ccc')
+		}
+	})
+})
