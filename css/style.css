@@ -128,6 +128,12 @@ section.banner img{
 	height: auto;
 }
 
+section.banner img:nth-child(2){
+	display: none;
+	max-width: 100%;
+	height: auto;
+}
+
 div.container{
 	position: absolute;
 	left: 0;
@@ -220,6 +226,7 @@ a.aBanner:hover{
 		border-right: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
 		background: #fff;
+		z-index: 9;
 	}
 
 	nav.mobile li{
@@ -241,4 +248,77 @@ a.aBanner:hover{
 	nav.mobile li a i{
 		font-size: 1.4rem;
 	}
+
+
+	.descricao-banner{		
+		max-width: 500px;
+	}
+
+	.descricao-banner h1{
+		font-size: 6.5rem;		
+	}
+}
+
+@media screen and (max-width: 865px){
+	.descricao-banner{		
+		max-width: 400px;		
+	}
+}
+
+@media screen and (max-width: 740px){
+
+	.descricao-banner{
+		margin-right: auto;
+		align-self: flex-start;
+	}
+
+	div.container{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		display: flex;
+		align-items: center;		
+	}
+
+	section.banner img:nth-child(1){
+		display: none;
+		max-width: 100%;
+		height: auto;
+	}
+
+	section.banner img:nth-child(2){
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+
+@media screen and (max-width: 520px){
+	html,
+	body{
+		font-size: 8px;
+	}
+
+	.descricao-banner{
+		text-align: center;
+	}
+	.descricao-banner h1{
+		font-size: 5.5rem;			
+	}
+
+	.descricao-banner p{
+		font-size: 2.0rem;
+		margin: 5px 0 20px;
+	}
+
+	.descricao-banner a{
+		display: block;
+		max-width: 200px;
+		margin: 4px auto;
+	}
+
 }
