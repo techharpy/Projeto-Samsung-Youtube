@@ -187,7 +187,7 @@ a.aBanner:hover{
 		font-size: 9px;
 	}
 
-	div.headerPrincipal nav li{
+	div.headerPrincipal nav.desktop li{
 		padding: 0 9px;	
 	}
 }
@@ -216,7 +216,7 @@ a.aBanner:hover{
 		align-items: center;
 	}
 
-	nav.mobile ul{
+	nav.mobile > ul{
 		display: none;
 		list-style-type: none;
 		position: absolute;
@@ -226,7 +226,7 @@ a.aBanner:hover{
 		border-right: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
 		background: #fff;
-		z-index: 9;
+		z-index: 9;		
 	}
 
 	nav.mobile li{
@@ -238,11 +238,32 @@ a.aBanner:hover{
 		border-bottom: 1px solid #eee;
 	}
 
-	nav.mobile li a{
+	nav.mobile li a.aWrapper{
 		display: flex;
 		justify-content: space-between;
-		padding: 20px 0;
+		padding: 20px 5px;
 		font-size: 1.4rem;
+		cursor: pointer;
+	}
+
+	nav.mobile li a.aWrapperTroca{
+		display: none;
+		justify-content: space-between;
+		padding: 20px 5px;
+		font-size: 1.4rem;
+		cursor: pointer;
+	}
+
+	ul.submenu-mobile a{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 15px;
+		font-size: 1.4rem;
+	}
+
+	ul.submenu-mobile{
+		background: #eee;
+		display: none;
 	}
 
 	nav.mobile li a i{
