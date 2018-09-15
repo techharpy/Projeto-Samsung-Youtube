@@ -181,6 +181,69 @@ a.aBanner:hover{
 	border: 2px solid #000;
 }
 
+section.galaxy{
+	padding: 20px 0;
+}
+
+section.galaxy:before{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #000;
+	margin: 10px auto;
+}
+
+section.galaxy h1{
+	font-size: 3.0rem;
+	text-align: center;
+	margin: 10px 0;
+}
+
+div.container-galaxy{
+	display: flex;
+	height: 300px;
+	padding: 40px 0;
+}
+
+div.galaxy-single{
+	flex: 1;
+	height: 100%;	
+	margin: 5px;
+	background-size: 100% 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+div.play{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.play i{
+	color: #fff;
+	font-size: 20px;
+}
+
+div.galaxy-single.galaxy1{
+	background-image: url('../img/sessao3.png');
+}
+div.galaxy-single.galaxy2{
+	background-image: url('../img/sessao4.png');
+}
+div.galaxy-single.galaxy3{
+	background-image: url('../img/sessao5.png');
+}
+
 @media screen and (max-width: 1280px){
 	html,
 	body{
