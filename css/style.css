@@ -244,6 +244,101 @@ div.galaxy-single.galaxy3{
 	background-image: url('../img/sessao5.png');
 }
 
+
+
+section.modal-galaxy{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background: rgba(0,0,0,.8);
+	padding: 20px;
+}
+
+div.video{
+	width: 100%;
+	height: 100%;
+	border: 4px solid blue;
+	position: relative;
+}
+
+div.video iframe{
+	width: 100%;
+	height: 100%;
+}
+
+div.fechar{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 25px;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section.modal-video{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 4;
+	padding: 20px 30px;
+}
+
+div.video{
+	width: 100%;
+	height: 100%;
+	border: 1px solid blue;
+	position: relative;
+}
+
+div.video iframe{
+	width: 100%;
+	height: 100%;	
+}
+
+div.x{
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-size: 30px;
+	color: white;
+	z-index: 999;
+	cursor: pointer;
+}*/
+
 @media screen and (max-width: 1280px){
 	html,
 	body{
